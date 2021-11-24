@@ -14,6 +14,12 @@ inputs:
     description: "Username for ssh connection"
     required: false
     default: "git"
+  host_key:
+    description: "known hosts"
+    required: true
+  ssh_config:
+    description: "aws key id and config file"
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
