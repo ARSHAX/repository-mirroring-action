@@ -10,16 +10,16 @@ inputs:
   target_repo_url:
     description: "Target url"
     required: true
-  ssh_username:
-    description: "Username for ssh connection"
-    required: false
-    default: "git"
   host_key:
     description: "known hosts"
     required: true
   ssh_config:
     description: "aws key id and config file"
     required: true
+  ssh_username:
+    description: "Username for ssh connection"
+    required: false
+    default: "git"
 runs:
   using: 'docker'
   image: 'Dockerfile'
