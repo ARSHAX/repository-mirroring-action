@@ -20,6 +20,11 @@ inputs:
     description: "SSH public key for ssh connection to the target repository"
     required: false
     default: "git"
+  aws_region:
+    description: "aws region"
+    required: false
+    default: "ap-east-1"
+  
 runs:
   using: 'docker'
   image: 'Dockerfile'
