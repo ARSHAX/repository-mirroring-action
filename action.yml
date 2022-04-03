@@ -22,8 +22,7 @@ inputs:
     default: "git"
   aws_region:
     description: "aws region"
-    required: false
-    default: "ap-east-1"
+    required: true
   
 runs:
   using: 'docker'
