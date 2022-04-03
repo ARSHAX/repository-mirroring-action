@@ -13,6 +13,6 @@ chmod 600 /root/.ssh/id_rsa.pub
 echo "$INPUT_SSH_CONFIG" > /root/.ssh/config && chmod 600 /root/.ssh/config
 
 touch /root/.ssh/known_hosts
-ssh-keyscan git-codecommit.ap-east-1.amazonaws.com >> /root/.ssh/known_hosts
+ssh-keyscan git-codecommit."$INPUT_AWS_REGION".amazonaws.com >> /root/.ssh/known_hosts
 
 
